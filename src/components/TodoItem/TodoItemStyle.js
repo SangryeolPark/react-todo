@@ -19,13 +19,13 @@ const commonCheckButtonStyle = `
     font-size: 20px;
     color: white;`;
 
-export const DeleteButton = styled.button`
+const DeleteButton = styled.button`
   ${commonButtonStyle}
   background: red;
   display: none;
 `;
 
-export const TodoItemStyle = styled.li`
+const TodoItemStyle = styled.li`
   background: ${(props) => (props.check ? 'lightgray' : 'white')};
   width: 638px;
   height: 58px;
@@ -46,7 +46,7 @@ export const TodoItemStyle = styled.li`
   }
 `;
 
-export const CheckButton = styled.div`
+const CheckButton = styled.div`
   ${commonCheckButtonStyle}
   border: ${(props) => (props.check ? '1px solid green' : '1px solid lightgray')};
   margin-left: 10px;
@@ -54,7 +54,7 @@ export const CheckButton = styled.div`
   color: white;
 `;
 
-export const CheckDeleteButton = styled.div`
+const CheckDeleteButton = styled.div`
   ${commonCheckButtonStyle}
   border: ${(props) => (props.check ? '1px solid red' : '1px solid lightgray')};
   margin-left: auto;
@@ -62,14 +62,14 @@ export const CheckDeleteButton = styled.div`
   background: ${(props) => (props.check ? 'red' : 'white')};
 `;
 
-export const Date = styled.span`
+const Date = styled.span`
   font-size: 18px;
   width: 120px;
   margin-left: 10px;
   text-align: center;
 `;
 
-export const ContentSpan = styled.span`
+const ContentSpan = styled.span`
   font-size: 18px;
   width: 370px;
   padding-left: 10px;
@@ -78,7 +78,7 @@ export const ContentSpan = styled.span`
   text-decoration: ${(props) => (props.check ? 'line-through' : 'none')};
 `;
 
-export const ContentInput = styled.input`
+const ContentInput = styled.input`
   font-size: 18px;
   width: 310px;
   height: 20px;
@@ -98,3 +98,14 @@ const Button = styled.button`
   ${commonButtonStyle}
   background: ${(props) => props.btnColor};
 `;
+
+export {
+  DeleteButton,
+  TodoItemStyle,
+  CheckButton,
+  CheckDeleteButton,
+  Date,
+  ContentSpan,
+  ContentInput,
+  Button,
+};
